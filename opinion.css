@@ -109,7 +109,7 @@ a,
 for the one ('home'). show the icon kink that contains items 
 should open and close the topnav (.icon)*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 300px) {
     .topnav a:not(:first-child),
     .dropdown .dropbtn {
         display: none;
