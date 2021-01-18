@@ -21,3 +21,9 @@ function adjust() {
 		x.className = "topnav";
 	}
 }
+
+$(function() {
+	$(".firstDay").click(function(){
+		$(".firstDay-Activities").toggle();
+	});
+});
