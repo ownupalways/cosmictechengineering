@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CosmicTech.Company</title>
+	<meta charset="UTF-8">
+	<!--screen responsivenes-->
+	<meta name="viewpoint" content="width=device-width, initial-scale=1" >
+	<link rel="stylesheet" href="opinion.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style>
+		body{
+			user-select: none;
+			margin:0;
+		}
+		.column {
+			float: left;
+		}
+		.column.side{
+			float: left;
+			width: 15%;
+			margin: 10px 10px 20px 20px;
+		}
+
+		.column.middle {
+			width: 72%;
+		}
+
+		.row:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.card {
+			display: inline-block;
+			width: 22%;
+			border: 2px solid white;
+			box-shadow: 0px 2px 2px 2px;
+			margin: 10px;
+		}
+		@media screen and (max-width: 600px){
+			.column.middle .card {
+				width: 100%;
+				overflow-wrap: break-word;
+				margin: 20px 0 10px 30px;
+			}
+			.column.side{
+				width: 100%;
+				overflow-wrap: break-word;
+				margin: 10px 10px 10px 5px;
+			}
+		}
+		@media screen and (max-width: 600px){
+			header {
+				height: auto;
+				overflow-wrap: break-word;
+			}
+		}
+		.Terms{
+			float: left;
+			text-decoration: none;
+		}
+
+		.down {
+			float: right;
+		}
+
+		footer:after {
+			clear: both;
+		}
+
+		footer {
+			margin: 10px;
+			background-color: black;
+		}
+	</style>
+</head>
+<body class="all">
+	<div id="power_nav" class="topnav">
+		<a href="index.html" class="active">Home</a>
+		<div class="dropdown">
+			<button class="dropbtn">About</button> 
+			<div class="dropdown-content">
+				<a href="company.html"> Company</a>
+				<a href="Inverter.html"> Inverter</a>
+				<a href="Solar.html"> Solar</a>
+				<a href="Batteries.html"> Batteries</a>
+				<a href="Layout.html"> Layout</a>
+				<a href="CCTV.html"> CCTV</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Service</button> 
+			<div class="dropdown-content">
+				<a href="Installation.html"> Installations</a>
+				<a href="Repairs.html"> Repair</a>
+				<a href="Servicing.html"> Servicing</a>
+				<a href="Shop.html"> Sales</a>
+				<a href="Training.html"> Training</a>
+				<a href="Consultancy.html"> Consultancy</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">WorkDays</button> 
+			<div class="dropdown-content">
+				<a> Moday:<b>Time</b></a>
+				<a> Tuesday:<b>Time</b></a>
+				<a> Wednesday:<b>Time</b></a>
+				<a> Thursday:<b>Time</b></a>
+				<a> Friday:<b>Time</b></a>
+				<a> Saturday:<b>Time</b></a>
+			</div>
+		</div>
+		<a href="Contact.html">Contact</a>
+		<a href="news">News</a>
+		<a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="adjust()">Menu<span></span>&#9776;</a>
+	</div>
+	<header style="text-align: center; font-family: optimusprinceps; margin:0; height:50px; padding-top:20px; font-weight: bolder; font-size:50px; background: #ccc; width: 100%; box-shadow: 3px 0 2px 3px; overflow:hidden;">
+		CosmicTech Engineering Nigeria Limited
+	</header>
+	<main style="margin-top: 20px; margin: 10px 15px 10px 20px; text-align: justify; ">
+		The initiative started 2020 with Engineer Olaide Ogunmola, the pioneer of <b style="font-family: optimusprinceps; font-weight: bolder;">cosmictech nigeria ltd.</b>
+	</main>
+	<div class="row">
+		<div class="column side"></div>
+		<div class="column middle">
+			<div class="row">
+				<div class="column">
+		 			<div class="card">
+		 				<div style="font-family: optimusprinceps; font-weight: bolder; font-size: 30px; height: 210px; margin: 20px; text-align: center;"> Where <br><br> we started From<br>The Place 
+		 				</div>
+		 				<div></div>
+		 			</div>
+		 			<div class="card">
+		 				<div style="font-family: optimusprinceps; font-weight: bolder; font-size: 30px; height: 210px; margin: 20px; text-align: center;"> Where<br><br> We are Now <br> The Place
+		 				</div>
+		 				<div></div>
+		 			</div>
+		 			<div class="card">
+		 				<div style="font-family: optimusprinceps; font-weight: bolder; font-size: 30px; height: 210px; margin: 20px; text-align: center;"> Where<br><br> We are Going <br> The Place
+		 				</div>
+		 				<div></div>
+		 			</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<p style="text-align: center;"><i>Everything is Possible...</i></p>
+		<footer><a class="Terms" href="Terms.html"> Terms & Condition </a> <div class="down"> Powered by HBTUSH COMSAT</div></footer>
+	<script>
+		function adjust() {
+			var x = document.getElementById("power_nav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			}else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+	
+</body>
+</html>

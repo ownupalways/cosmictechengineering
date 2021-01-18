@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CTENL.News</title>
+	<meta charset="UTF-8">
+	<!--screen responsivenes-->
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="opinion.css">
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+	<style>
+		body{
+			user-select: none;
+			margin:0;
+		}
+		.column {
+			float: left;
+		}
+		.column.side{
+			width: 25%;
+			margin: 10px;
+		}
+
+		.column.middle {
+			width: 50%;
+			padding: 10px;
+		}
+		.row{
+			margin-top: 40px;
+		}
+
+		.row::after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.card {
+			display: inline-block;
+			width: 22%;
+			border: 2px solid white;
+			box-shadow: 0px 2px 2px 2px;
+			margin: 10px;
+		}
+		@media screen and (max-width: 600px){
+			.column.middle .card {
+				width: 100%;
+				overflow-wrap: break-word;
+				margin: 20px 0 10px 30px;
+			}
+			.column.side{
+				width: 100%;
+				overflow-wrap: break-word;
+				margin: 10px 10px 10px 5px;
+			}
+		}
+		@media screen and (max-width: 600px){
+			header {
+				height: auto;
+				overflow-wrap: break-word;
+			}
+		}
+		.Terms{
+			float: left;
+			text-decoration: none;
+		}
+
+		.down {
+			float: right;
+		}
+
+		footer:after {
+			clear: both;
+		}
+
+		footer {
+			margin: 10px;
+			background-color: black;
+		}
+	</style>
+</head>
+<body class="all">
+	<div id="power_nav" class="topnav">
+		<a href="index.html" class="active">Home</a>
+		<div class="dropdown">
+			<button class="dropbtn">About</button> 
+			<div class="dropdown-content">
+				<a href="company.html"> Company</a>
+				<a href="Inverter.html"> Inverter</a>
+				<a href="Solar.html"> Solar</a>
+				<a href="Batteries.html"> Batteries</a>
+				<a href="Layout.html"> Layout</a>
+				<a href="CCTV.html"> CCTV</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Service</button> 
+			<div class="dropdown-content">
+				<a href="Installation.html"> Installations</a>
+				<a href="Repairs.html"> Repair</a>
+				<a href="Servicing.html"> Servicing</a>
+				<a href="Sales.html"> Sales</a>
+				<a href="Training.html"> Training</a>
+				<a href="Consultancy.html"> Consultancy</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">WorkDays</button> 
+			<div class="dropdown-content">
+				<a> Moday:<b>Time</b></a>
+				<a> Tuesday:<b>Time</b></a>
+				<a> Wednesday:<b>Time</b></a>
+				<a> Thursday:<b>Time</b></a>
+				<a> Friday:<b>Time</b></a>
+				<a> Saturday:<b>Time</b></a>
+			</div>
+		</div>
+		<a href="Contact.html">Contact</a>
+		<a href="news.html">News</a>
+		<a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="adjust()">Menu<span></span>&#9776;</a>
+	</div>
+
+	<div class="row">
+		<div class="column side"></div>
+		<div class="column middle">
+			<div class="space" style="text-align: justify;">
+				We can get everthing to you at once only if your are really interested in what we have to offer
+				you.
+				Quality is our watch word because we know that only can give us you referrals. And your referrals can give another 
+				referrals.<br><br>
+
+				Do you care for our kind and comfort offer that lightens your world 24/7? 
+				<a href="Contact.html" style="text-decoration: none; color: grey; font-style: italic; font-family: Book Antiqua"> Contact Us</a> and we promise you last experience of happiness with us...
+			</div>
+		</div>
+		<div class="column side"></div>
+	</div>
+	<p style="text-align: center;"><i>Everything is Possible...</i></p>
+		<footer><a class="Terms" href="Terms.html"> Terms & Condition </a> <div class="down"> Powered by HBTUSH COMSAT</div></footer>
+	<script>
+		function adjust() {
+			var x = document.getElementById("power_nav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			}else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+</body>
+</html>
