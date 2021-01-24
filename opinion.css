@@ -218,6 +218,14 @@ p span .imagery-btn:hover {
 .down {
     float: right;
 }
+@media screen and (max-width:800px){
+    .Terms{
+        font-size:10px;
+    }
+    .down{
+        font-size:10px;
+    }
+}
 /*Workdays File handle*/
 .firstDay-Activities{
     display: none;
